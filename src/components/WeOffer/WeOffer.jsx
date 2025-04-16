@@ -7,6 +7,7 @@ import sprite from '../../assets/icons.svg';
 import { SwiperSlide } from 'swiper/react';
 import { apartmentsOption, houseOption } from '../../constants/basic';
 import NoItems from '../Errors/NoItems';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 const WeOffer = () => {
   const [selectedOption, setSelectedOption] = useState(houseOption);
@@ -50,17 +51,19 @@ const WeOffer = () => {
       </div>
 
       <div className={s.contentWrapper}>
-        <h2 className={s.contentTitle}>We make it easy for houses and apartments.</h2>
-        <p className={s.contentText}>
+        <AnimatedText as="h2" className={s.contentTitle}>
+          We make it easy for houses and apartments.
+        </AnimatedText>
+        <AnimatedText className={s.contentText}>
           Whether it's selling your current home, getting financing, or buying a new home, we make it easy and
           efficient. The best part? you'll save a bunch of money and time with our services.
-        </p>
+        </AnimatedText>
       </div>
 
       <div className={s.sliderWrapper}>
         <CardSlider breakpoints={cardBreakpoints}>
           {propertiesItems.length === 0 ? (
-            <NoItems property={selectedOption}/>
+            <NoItems property={selectedOption} />
           ) : (
             propertiesItems.map((item) => (
               <SwiperSlide className={s.sliderCard} id={item.id}>

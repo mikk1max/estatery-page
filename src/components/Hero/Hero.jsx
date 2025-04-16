@@ -1,15 +1,18 @@
 import React from 'react';
 import s from './Hero.module.css';
 import specialOffer from '../../assets/data/specialOffer.json';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 const Hero = () => {
   return (
     <section className={s.heroSection}>
       <div className={s.heroContainer}>
-        <h1 className={s.heroTitle}>Buy, rent, or sell your property easily</h1>
-        <p className={s.heroSlogan}>
+        <AnimatedText as="h1" className={s.heroTitle}>
+          Buy, rent, or sell your property easily
+        </AnimatedText>
+        <AnimatedText as="p" className={s.heroSlogan}>
           A great platform to buy, sell, or even rent your properties without any commissions.
-        </p>
+        </AnimatedText>
         <div className={s.heroStats}>
           <div className={s.statsItem}>
             <p>50k+</p>

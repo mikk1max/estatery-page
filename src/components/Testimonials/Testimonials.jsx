@@ -4,6 +4,7 @@ import s from './Testimonials.module.css';
 import testimonials from '../../assets/data/testimonials.json';
 import clsx from 'clsx';
 import { useScreenWidth } from '../hooks/useScreenWidth.js';
+import AnimatedText from '../AnimatedText/AnimatedText.jsx';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,8 +40,8 @@ const Testimonials = () => {
   return (
     <section className={s.testimonialsSection}>
       <div className={s.contentWrapper}>
-        <h2 className={s.title}>Testimonials</h2>
-        <p className={s.subTitle}>See what our property managers, landlords, and tenants have to say</p>
+        <AnimatedText as='h2' className={s.title}>Testimonials</AnimatedText>
+        <AnimatedText className={s.subTitle}>See what our property managers, landlords, and tenants have to say</AnimatedText>
       </div>
 
       <div className={s.rentersContainer}>
