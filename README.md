@@ -1,12 +1,45 @@
-# React + Vite
+# Front-end Developer Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Your task is to implement a webpage based on this Figma design:  
+Twoim zadaniem jest zaimplementowanie strony zgodnie z tym projektem w Figma:  
+👉 [Figma Project – Design for recruitment process](https://www.figma.com/design/97AvM697Bvj1d8onumvFPp/Design-for-recruitment-process?node-id=0-1&p=f)
 
-Currently, two official plugins are available:
+## Technical Requirements / Wymagania techniczne
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Use **React**. Optionally, you may use **Next.js**.  
+  Użyj **React**. Możesz opcjonalnie skorzystać z **Next.js**.
 
-## Expanding the ESLint configuration
+- Feel free to use your favorite CSS framework such as **Tailwind**, **DaisyUI**, etc.  
+  Możesz użyć swojego ulubionego frameworka CSS, np. **Tailwind**, **DaisyUI** lub innego, który dobrze znasz.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- You don't need to make a **pixel-perfect** copy – we're more interested in:  
+  Nie musisz odwzorowywać całej strony **pixel-perfect** – zależy nam przede wszystkim na:
+  - code quality / jakości kodu  
+  - thoughtful component structure / przemyślanej strukturze komponentów  
+  - an aesthetically pleasing result / estetycznym efekcie końcowym
+
+## How to Submit / Jak przesłać rozwiązanie?
+
+Share your solution in two forms:  
+Podziel się swoim rozwiązaniem w dwóch formach:
+
+1. A link to your **GitHub** repository  
+   Link do repozytorium na **GitHubie**
+
+2. A link to the live version (e.g. **Vercel**, **Netlify**, **GitHub Pages**)  
+   Link do działającej wersji strony (np. **Vercel**, **Netlify**, **GitHub Pages**)
+
+If needed, include a short `README.md` with instructions for running the project locally.  
+W razie potrzeby dołącz krótki plik `README.md` z instrukcjami uruchomienia projektu lokalnie.
+
+## What We Look For / Na co zwracamy uwagę?
+
+- ✅ code quality and readability / jakość i czytelność kodu  
+- ✅ component organization / organizacja komponentów  
+- ✅ responsiveness and aesthetics / responsywność i estetyka  
+- ✅ smart use of CSS framework / przemyślane użycie frameworka CSS  
+- ✅ UI/UX design approach / ogólne podejście do projektowania interfejsów
+
+---
+
+**Good luck! 💻✨ / Powodzenia! 💻✨**
