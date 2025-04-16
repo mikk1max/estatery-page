@@ -5,7 +5,14 @@
 
   --color-black: #000;
   --color-white: #fff;
+  --color-gray: #d6d8e5;
+  --color-darkgray: #7b8191;
+  --color-deep-blue: #000929;
   --primary-color: #6851ff;
+  --primary-dark: #3d1efe;
+  --primary-deep: #2511ae;
 
-  --transition-value: 0.3s ease
+
+  --transition-value: 0.3s ease;
+  --transition-hide-show-text: 1s ease-in-out;
 }

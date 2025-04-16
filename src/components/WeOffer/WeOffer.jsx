@@ -11,17 +11,40 @@ import AnimatedText from '../AnimatedText/AnimatedText';
 
 const WeOffer = () => {
   const [selectedOption, setSelectedOption] = useState(houseOption);
-  const [propertiesItems, setPropertiesItems] = useState(houses || apartments);
+  const [propertiesItems, setPropertiesItems] = useState(houses);
 
   const cardBreakpoints = {
-    320: { slidesPerView: 1.12, spaceBetween: 8, slidesOffsetAfter: 40 },
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 12,
+      slidesOffsetAfter: 16,
+
+    },
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+      slidesOffsetAfter: 16,
+
+    },
+    768: {
+      slidesPerView: 2.2,
+      spaceBetween: 24,
+      slidesOffsetAfter: 16,
+ 
+    },
+    1090: {
+      slidesPerView: 2.5,
+      spaceBetween: 32,
+      slidesOffsetAfter: 40,
+    },
     1440: {
       slidesPerView: 3,
       spaceBetween: 32,
-      slidesOffsetBefore: 0,
-      slidesOffsetAfter: 0,
+      slidesOffsetAfter: 40,
+      
     },
   };
+  
 
   const handleChangeOption = (option) => {
     if (option === selectedOption) return;
