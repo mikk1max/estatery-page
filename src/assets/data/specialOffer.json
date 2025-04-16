@@ -1,0 +1,13 @@
+{
+  "id": "a-3",
+  "title": "Beverly Springfield",
+  "address": "2821 Lake Sevilla, Palm Harbor, TX",
+  "price": "3,850",
+  "pricePer": "month",
+  "currency": "$",
+  "type": "apartments",
+  "images": {
+    "1x": "/images/shared/1x/apartments/beverly-springfield.png",
+    "2x": "/images/shared/2x/apartments/beverly-springfield.png"
+  }
+}

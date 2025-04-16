@@ -1,0 +1,127 @@
+.mobileMenuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  /* background-color: var(--color-white); */
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+}
+
+.menuNav {
+  flex-direction: column;
+  position: relative;
+}
+
+.menuClose {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: 0;
+
+  width: 34px;
+  height: 34px;
+
+  & .closeIcon {
+    stroke: var(--color-black);
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  justify-content: center;
+  padding-top: calc(120px - 32px);
+  margin-bottom: 86px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.menuListItem {
+  width: fit-content;
+  transition: all var(--transition-value);
+}
+
+.menuListItem:hover {
+  color: #6851ff;
+}
+
+.authBtnItem {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+
+  & .authBtn {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    transition: all var(--transition-value);
+  }
+
+  & .authBtn:first-child {
+    border: 2px solid #d6d8e5;
+  }
+
+  & .authBtn:first-child:hover {
+    border: 2px solid #6851ff;
+  }
+
+  & .authBtn:first-child:focus {
+    border: 2px solid #6851ff;
+    color: #6851ff;
+  }
+
+  & .authBtn:first-child:active {
+    border: 2px solid #2511ae;
+    color: #2511ae;
+  }
+
+  & .authBtn:first-child:disabled {
+    border: 2px solid #d6d8e5;
+    color: #717788;
+  }
+
+  & .authBtn:last-child {
+    background-color: #6851ff;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+
+  & .authBtn:last-child:hover {
+    background-color: #8b8aff;
+  }
+
+  & .authBtn:last-child:focus {
+    background-color: #6851ff;
+    border: 2px solid #3118d6;
+  }
+
+  & .authBtn:last-child:active {
+    background-color: #3d1efe;
+  }
+
+  & .authBtn:last-child:disabled {
+    background-color: #b5b8cb;
+  }
+}

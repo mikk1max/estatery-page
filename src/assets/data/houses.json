@@ -1,0 +1,41 @@
+[
+  {
+    "id": "h-1",
+    "title": "Palm Harbor",
+    "address": "2699 Green Valley, Highland Lake, FL",
+    "price": "3,400",
+    "pricePer": "month",
+    "currency": "$",
+    "type": "house",
+    "images": {
+        "1x": "/images/shared/1x/houses/palm-harbor.png",
+        "2x": "/images/shared/2x/houses/palm-harbor.png"
+    }
+  },
+  {
+    "id": "h-2",
+    "title": "St. Crystal",
+    "address": "210 US Highway, Highland Lake, FL",
+    "price": "6,550",
+    "pricePer": "month",
+    "currency": "$",
+    "type": "house",
+    "images": {
+        "1x": "/images/shared/1x/houses/crystal.png",
+        "2x": "/images/shared/2x/houses/crystal.png"
+    }
+  },
+  {
+    "id": "h-3",
+    "title": "Faulkner Ave",
+    "address": "909 Woodland St, Michigan, IN",
+    "price": "4,950",
+    "pricePer": "month",
+    "currency": "$",
+    "type": "house",
+    "images": {
+        "1x": "/images/shared/1x/houses/faulkner-ave.png",
+        "2x": "/images/shared/2x/houses/faulkner-ave.png"
+    }
+  }
+]

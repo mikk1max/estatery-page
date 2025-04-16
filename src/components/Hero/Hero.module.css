@@ -1,0 +1,271 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.heroContainer {
+  background-image: url(/images/mobile/1x/gradient-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 34px 32px 17px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  position: relative;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .heroContainer {
+    background-image: url(/images/mobile/2x/gradient-back.png);
+  }
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+  max-width: 312px;
+  margin: 0 auto;
+}
+
+.heroSlogan {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.heroStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 312px;
+  width: 100%;
+  margin: 0 auto;
+
+  & .statsItem {
+    position: relative;
+    padding: 0 24px;
+  }
+}
+
+.statsItem p:first-child {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.statsItem p:last-child {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  color: #7b8191;
+  line-height: 1.5;
+}
+
+.statsItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #d6d8e5;
+}
+
+.containerWrapper {
+  margin: 0 auto;
+  padding: 0 32px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 375px;
+
+  & .specialOfferContainer {
+    padding-left: 20px;
+    width: 100%;
+    height: 292px;
+    position: relative;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/mobile/1x/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .map {
+    background-image: url(/images/mobile/2x/map.jpg);
+  }
+}
+
+.specialCard {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  border-radius: 4px;
+  width: 166px;
+  height: fit-content;
+  box-shadow: 0 2px 19px 0 #e6e6ed;
+  background-color: var(--color-white);
+  overflow: hidden;
+
+  & .offerImage {
+    width: 100%;
+    height: auto;
+  }
+
+  & .contentWrapper {
+    padding: 10px;
+
+    & .price span {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.4;
+      opacity: 0.5;
+
+      margin-bottom: 2px;
+    }
+
+    & .price b {
+      font-weight: 800;
+      line-height: 1.5;
+      font-size: 12px;
+      letter-spacing: -0.04em;
+      color: var(--primary-color);
+    }
+
+    & .title {
+      font-weight: 700;
+      font-size: 11px;
+
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+
+      margin-bottom: 4px;
+    }
+
+    & .address {
+      font-weight: 500;
+      font-size: 7px;
+      line-height: 1.5;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (width >= 1440px) {
+  .heroSection {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
+  }
+
+  .heroContainer {
+    background-image: url(/images/desktop/1x/gradient-back.png);
+    padding: 148px 64px;
+    width: 100%;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .heroContainer {
+      background-image: url(/images/desktop/2x/gradient-back.png);
+    }
+  }
+
+  .heroTitle {
+    font-size: 4rem;
+
+    max-width: 544px;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .heroSlogan {
+    max-width: 400px;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .heroStats {
+    max-width: 352px;
+    width: 100%;
+    margin: 0;
+    margin-top: 48px;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  .containerWrapper {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    width: 100%;
+    max-width: 50%;
+
+    & .specialOfferContainer {
+      padding-left: 46px;
+      height: 100%;
+      position: relative;
+    }
+  }
+
+  .map {
+    background-image: url(/images/desktop/1x/map.jpg);
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .map {
+      background-image: url(/images/desktop/2x/map.jpg);
+    }
+  }
+
+  .specialCard {
+    border-radius: 8px;
+    width: 352px;
+
+    box-shadow: 0 4px 40px 0 #e6e6ed;
+
+    & .contentWrapper {
+      padding: 20px;
+
+      & .price span {
+        font-size: 14px;
+      }
+
+      & .price b {
+        font-size: 24px;
+      }
+
+      & .title {
+        font-size: 24px;
+
+        margin-bottom: 8px;
+      }
+
+      & .address {
+        font-size: 16px;
+      }
+    }
+  }
+}

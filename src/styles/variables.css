@@ -1,0 +1,11 @@
+:root {
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --second-family: 'Roobert', sans-serif;
+  --third-family: 'Inter', sans-serif;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --primary-color: #6851ff;
+
+  --transition-value: 0.3s ease
+}
