@@ -1,39 +1,34 @@
 .weOfferSection {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   overflow: visible;
 }
 
 .tabContainer {
-  max-width: 375px;
   width: 100%;
-  min-width: 320px;
-  padding: 0 32px;
-  margin: 0 auto;
-  margin-bottom: 32px;
+  max-width: 544px;
+  padding: 0 clamp(16px, 6vw, 96px);
+  margin: 0 auto 32px;
 
   & .tabBackground {
     border: 1px solid rgba(214, 216, 229, 0.3);
     border-radius: 8px;
-    width: 100%;
     background-color: rgba(237, 234, 255, 0.3);
     padding: 8px;
-    margin: 0 auto;
   }
 
   & button {
     background-color: transparent;
     border: none;
     padding: 12px 8px;
-    width: calc(100% / 2);
+    width: 50%;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.03em;
     text-align: center;
-    color: #7b8191;
+    color: var(--color-darkgray);
     text-transform: capitalize;
 
     transition: all var(--transition-value);
@@ -42,7 +37,7 @@
   & button:hover,
   button:focus,
   button:active {
-    color: #6851ff;
+    color: var(--primary-color);
   }
 
   & .selectedTab {
@@ -53,7 +48,7 @@
     background: var(--color-white);
 
     font-weight: 700;
-    color: #6851ff;
+    color: var(--primary-color);
   }
 
   & .selectedTab:hover {
@@ -63,7 +58,7 @@
   }
 
   & .selectedTab:focus {
-    border: 1px solid #6851ff;
+    border: 1px solid var(--primary-color);
     box-shadow: 0 3px 40px 0 rgba(14, 8, 84, 0.05);
     background: rgba(61, 30, 254, 0.2);
   }
@@ -76,18 +71,16 @@
 }
 
 .contentWrapper {
-  max-width: 375px;
-  min-width: 320px;
+  max-width: 546px;
+  width: 100%;
   padding: 0 32px;
   text-align: center;
   margin: 0 auto;
 
   & .contentTitle {
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-    text-align: center;
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    line-height: 1.4;
 
     margin-bottom: 24px;
   }
@@ -96,18 +89,16 @@
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
-    color: #7b8191;
+    color: var(--color-darkgray);
 
     margin-bottom: 50px;
   }
 }
 
 .sliderWrapper {
-  padding-left: 32px;
-  min-width: 320px;
+  padding-left: clamp(16px, 6vw, 32px);
   width: 100%;
-  max-width: 375px;
+  max-width: 1280px;
   margin: 0 auto;
 
   overflow: hidden;
@@ -116,13 +107,9 @@
 
 .sliderCard {
   border-radius: 8px;
-  /* width: 100%; */
-  /* padding-left: 8px; */
   position: relative;
-  /* height: 364px; */
   background-color: var(--color-white);
-  /* overflow: hidden; */
-  /* overflow: visible; */
+
   transition: all var(--transition-value);
 
   & .cardImage {
@@ -165,7 +152,7 @@
       font-size: 24px;
       line-height: 1.5;
       letter-spacing: -0.01em;
-      color: #000929;
+      color: var(--color-deep-blue);
 
       margin-bottom: 8px;
     }
@@ -174,14 +161,13 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.5;
-      color: #000929;
+      color: var(--color-deep-blue);
 
       opacity: 0.5;
 
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      /* width: 225px; */
     }
 
     & .favoriteBtn {
@@ -192,14 +178,13 @@
       width: 48px;
       height: 48px;
       border-radius: 100%;
-      background-color: #fff;
+      background-color: var(--color-white);
       border: 1.5px solid #eaecf4;
       padding-top: 2px;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      /* border: none; */
 
       transition: all var(--transition-value);
 
@@ -217,7 +202,7 @@
       box-shadow: 0 4px 40px 0 #e6e6ed;
 
       & .heart {
-        stroke: #3d1efe;
+        stroke: var(--primary-dark);
       }
     }
 
@@ -231,7 +216,7 @@
     }
 
     & .favoriteBtn:active {
-      background-color: #6851ff;
+      background-color: var(--primary-color);
       border: 1.5px solid #8b8aff;
 
       & .heart {
@@ -285,33 +270,7 @@
   border-left: 8px solid transparent;
 }
 
-@media (width >= 1440px) {
-  .tabContainer {
-    max-width: 544px;
-    padding: 0 96px;
-  }
-
-  .sliderWrapper {
-    padding-left: 0;
-    min-width: 320px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    /* width: 100%; */
-    /* overflow: hidden; */
-  }
-
-  .contentWrapper {
-    max-width: 544px;
-    padding: 0;
-
-    & .contentTitle {
-      font-size: 2.5rem;
-      line-height: 1.5;
-    }
-  }
-
+@media (width >= 1090px) {
   .sliderCard:hover {
     box-shadow: 0 4px 40px 0 #e6e6ed;
     cursor: pointer;

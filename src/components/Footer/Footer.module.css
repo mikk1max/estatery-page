@@ -6,7 +6,7 @@ footer {
   flex-direction: column;
   gap: 24px;
 
-  transition: filter 0.25s ease;
+  transition: filter var(--transition-value);
 }
 
 .logoDocsWrapper {
@@ -30,6 +30,7 @@ footer {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
+    color: var(--color-deep-blue);
   }
 }
 
@@ -41,13 +42,11 @@ footer {
   gap: 14px 32px;
 
   & .docsItem {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-transform: uppercase;
     text-align: center;
-    color: #000;
     opacity: 0.5;
 
     min-width: 138px;
@@ -57,7 +56,7 @@ footer {
   }
 
   & .docsItem:hover {
-    color: #3d1efe;
+    color: var(--primary-dark);
   }
 }
 
@@ -76,12 +75,10 @@ footer {
   gap: 24px;
 
   .allRights {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    color: #000;
     opacity: 0.5;
   }
 
@@ -101,13 +98,13 @@ footer {
 
     & li:hover {
       & a svg {
-        fill: #3d1efe;
+        fill: var(--primary-dark);
       }
     }
   }
 }
 
-@media (width >= 1440px) {
+@media (width >= 1090px) {
   footer {
     padding: 64px;
     gap: 40px;

@@ -11,7 +11,7 @@
   flex-direction: column;
 
   background-color: rgba(255, 255, 255, 0.5);
-  transition: all 0.25s ease;
+  transition: all var(--transition-value);
 }
 
 .menuNav {
@@ -43,11 +43,9 @@
   padding-top: calc(120px - 32px);
   margin-bottom: 86px;
 
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 26px;
   line-height: 1.5;
-  color: #000;
 }
 
 .menuListItem {
@@ -56,7 +54,7 @@
 }
 
 .menuListItem:hover {
-  color: #6851ff;
+  color: var(--primary-color);
 }
 
 .authBtnItem {
@@ -80,31 +78,31 @@
   }
 
   & .authBtn:first-child {
-    border: 2px solid #d6d8e5;
+    border: 2px solid var(--color-gray);
   }
 
   & .authBtn:first-child:hover {
-    border: 2px solid #6851ff;
+    border: 2px solid var(--primary-color);
   }
 
   & .authBtn:first-child:focus {
-    border: 2px solid #6851ff;
-    color: #6851ff;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
   }
 
-  & .authBtn:first-child:active {
-    border: 2px solid #2511ae;
-    color: #2511ae;
+  &.authBtn:first-child:active {
+    border: 2px solid var(--primary-deep);
+    color: var(--primary-deep);
   }
 
   & .authBtn:first-child:disabled {
-    border: 2px solid #d6d8e5;
+    border: 2px solid var(--color-gray);
     color: #717788;
   }
 
   & .authBtn:last-child {
-    background-color: #6851ff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--color-white);
     border: 2px solid transparent;
   }
 
@@ -113,12 +111,12 @@
   }
 
   & .authBtn:last-child:focus {
-    background-color: #6851ff;
+    background-color: var(--primary-color);
     border: 2px solid #3118d6;
   }
 
   & .authBtn:last-child:active {
-    background-color: #3d1efe;
+    background-color: var(--primary-dark);
   }
 
   & .authBtn:last-child:disabled {
