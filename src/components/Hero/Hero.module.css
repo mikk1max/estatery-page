@@ -121,6 +121,7 @@
   box-shadow: 0 2px 20px #e6e6ed;
   background-color: var(--color-white);
   overflow: hidden;
+  z-index: 5;
 }
 
 .offerImage {

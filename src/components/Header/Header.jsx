@@ -3,10 +3,12 @@ import sprite from '../../assets/icons.svg';
 import s from './Header.module.css';
 import MenuOverlay from '../MenuOverlay/MenuOverlay';
 import { useScreenWidth } from '../../hooks/useScreenWidth';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const screenWidth = useScreenWidth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const elementsToBlur = [
@@ -28,9 +30,9 @@ const Header = () => {
 
   const renderNavLinks = () => (
     <ul className={s.menuList}>
-      {['Rent', 'Buy', 'Sell', 'Manage Property', 'Resources'].map((item) => (
+      {['rent', 'buy', 'sell', 'manage property', 'resources'].map((item) => (
         <li key={item} className={s.menuListItem}>
-          <a href="#">{item}</a>
+          <NavLink to={`/${item}`}>{item}</NavLink>
         </li>
       ))}
     </ul>
@@ -51,10 +53,12 @@ const Header = () => {
     <header className={s.header}>
       <div className={s.headerWrapper}>
         <div className={s.logoWrapper}>
-          <svg className={s.logo} role="img" aria-label="Estatery Logo">
+          <svg className={s.logo} role="img" aria-label="Estatery Logo" onClick={() => navigate('/')}>
             <use href={`${sprite}#icon-logo`} />
           </svg>
-          <p className={s.logoText}>Estatery</p>
+          <p className={s.logoText} onClick={() => navigate('/')}>
+            Estatery
+          </p>
         </div>
 
         {screenWidth >= 1090 ? (

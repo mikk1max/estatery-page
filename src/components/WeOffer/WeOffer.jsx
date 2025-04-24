@@ -16,35 +16,30 @@ const WeOffer = () => {
   const cardBreakpoints = {
     0: {
       slidesPerView: 1.1,
-      spaceBetween: 12,
+      spaceBetween: 16,
       slidesOffsetAfter: 16,
-
     },
     576: {
       slidesPerView: 1.5,
       spaceBetween: 16,
       slidesOffsetAfter: 16,
-
     },
     768: {
       slidesPerView: 2.2,
       spaceBetween: 24,
       slidesOffsetAfter: 16,
- 
     },
     1090: {
       slidesPerView: 2.5,
       spaceBetween: 32,
-      slidesOffsetAfter: 40,
+      slidesOffsetAfter: 0,
     },
     1440: {
       slidesPerView: 3,
       spaceBetween: 32,
-      slidesOffsetAfter: 40,
-      
+      slidesOffsetAfter: 0,
     },
   };
-  
 
   const handleChangeOption = (option) => {
     if (option === selectedOption) return;
