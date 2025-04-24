@@ -52,20 +52,17 @@
   }
 
   & .selectedTab:hover {
-    box-shadow: 0 3px 40px 0 rgba(14, 8, 84, 0.05);
     background-color: #edeaff;
     border: 1px solid #d6d8e5;
   }
 
   & .selectedTab:focus {
     border: 1px solid var(--primary-color);
-    box-shadow: 0 3px 40px 0 rgba(14, 8, 84, 0.05);
     background: rgba(61, 30, 254, 0.2);
   }
 
   & .selectedTab:active {
     border: 1px solid #8b8aff;
-    box-shadow: 0 3px 40px 0 rgba(14, 8, 84, 0.05);
     background: #edeaff;
   }
 }
@@ -96,7 +93,7 @@
 }
 
 .sliderWrapper {
-  padding-left: clamp(16px, 6vw, 32px);
+  /* padding-left: clamp(16px, 6vw, 32px); */
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -110,7 +107,7 @@
   position: relative;
   background-color: var(--color-white);
 
-  transition: all var(--transition-value);
+  transition: box-shadow var(--transition-value) !important;
 
   & .cardImage {
     width: 100%;

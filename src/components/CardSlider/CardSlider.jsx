@@ -20,7 +20,7 @@ const CardSlider = ({ children, breakpoints, navigation, pagination, ...props })
       navigation={navigation}
       keyboard={{ enabled: true }}
       breakpoints={breakpoints}
-      style={screen >= 1090 ? { paddingLeft: 32, paddingTop: 32, paddingBottom: 32 } : { paddingLeft: 8 }}
+      style={screen >= 1090 ? { padding: 32 } : { paddingLeft: 16 }}
       // style={{padding: 40}}
       {...props}
     >

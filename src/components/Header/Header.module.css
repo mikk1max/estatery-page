@@ -25,12 +25,14 @@
 .logoWrapper .logo {
   width: clamp(24px, 5vw, 32px);
   height: clamp(24px, 5vw, 32px);
+  cursor: pointer;
 }
 
 .logoWrapper .logoText {
   font-weight: 700;
   font-size: clamp(16px, 4vw, 20px);
   line-height: 1.4;
+  cursor: pointer;
 }
 
 .navigationList {
@@ -72,6 +74,7 @@
   font-size: clamp(14px, 3vw, 16px);
   line-height: 1.5;
   transition: all var(--transition-value);
+  text-transform: capitalize;
 }
 
 .menuListItem:hover {
